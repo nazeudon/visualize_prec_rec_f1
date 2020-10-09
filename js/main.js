@@ -71,7 +71,7 @@
     false
   );
 
-  function readCSV(csvdata) {
+  const readCSV = (csvdata) => {
     const split_data = csvdata.split("\n");
     const data = [];
     for (let i = 0; i < split_data.length; i++) {
