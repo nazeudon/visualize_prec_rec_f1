@@ -1,0 +1,67 @@
+body {
+  font-size: 18px;
+  font-family: monospace;
+}
+
+p {
+  margin: 5px;
+}
+
+.container {
+  margin: 100px auto;
+  padding: 50px;
+  width: 1000px;
+  border: solid 1px rgb(196, 196, 196);
+  border-radius: 10px;
+}
+
+.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container li {
+  width: 450px;
+  padding: 20px;
+}
+
+.container div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 400px;
+  border-bottom: solid 1px rgb(196, 196, 196);
+}
+
+.container output {
+  width: 100px;
+}
+
+#graph {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+#row {
+  margin-top: 50px;
+}
+
+#thresh {
+  width: 30px;
+  text-align: right;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; /* 🚩これ無しだとスタイルがほぼ全く反映されないので注意 */
+  appearance: none;
+  cursor: pointer; /* カーソルを分かりやすく */
+  outline: none; /* スライダーのアウトラインは見た目がキツイので消す */
+  height: 4px; /* バーの高さ */
+  width: 190px; /* バーの幅 */
+  background: rgba(30, 144, 255, 0.8); /* バーの背景色 */
+  border-radius: 5px; /*バーの両端の丸み*/
+}

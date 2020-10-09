@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PR曲線</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container" id="drop-zone">
+      <ul>
+        <li>
+          <div>
+            <p>Score threshold</p>
+            <p>
+              <input
+                id="slider"
+                type="range"
+                value="0.50"
+                min="0.0"
+                max="1.0"
+                step="0.1"
+                oninput="document.getElementById('thresh-num').value=this.value"
+              />
+            </p>
+            <p id="thresh"><output id="thresh-num">0.5</output></p>
+          </div>
+          <div id="row">
+            <p>F1 Score</p>
+            <p id="f1">0.0</p>
+          </div>
+          <div>
+            <p>Precision</p>
+            <p id="precision">0.0</p>
+          </div>
+          <div>
+            <p>Recall</p>
+            <p id="recall">0.0</p>
+          </div>
+        </li>
+        <li>
+          <canvas id="graph"> Canvas not supported... </canvas>
+        </li>
+      </ul>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
